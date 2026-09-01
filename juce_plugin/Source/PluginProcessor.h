@@ -30,5 +30,7 @@ public:
     void getStateInformation(juce::MemoryBlock&) override {}
     void setStateInformation(const void*, int) override {}
     
-    float gain = 0.5f;
+private:
+    juce::AudioParameterFloat* gain = nullptr;
+    juce::AudioParameterBool* bypass = nullptr;
 };

@@ -6,8 +6,8 @@ This interested me because JUCE makes plugin development significantly easier, b
 
 To investigate this, I implemented the same simple gain plugin twice:
 
-    once using JUCE
-    once directly using the VST3 SDK
+* once using JUCE
+* once directly using the VST3 SDK
 
 The DSP itself was deliberately trivial: each audio sample is multiplied by a gain value. This was important because I wanted to minimise the cost of the DSP algorithm itself and make any measurable difference more likely to come from the surrounding framework.
 
